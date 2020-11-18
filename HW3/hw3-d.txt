@@ -1,0 +1,6 @@
+I feel like this is a good experience that we can physically use cloud database 
+computation. However, there are pros and corns of this. For one thing, cloud 
+service can provide us some powerful computational infrasture. I can use it anywhere 
+with internet. But, in the other side, because it is provided via internet, if internet is not 
+stable, the connection with server would be bad. One more thing is that, becasue we share the 
+computation resource from the server. Sometimes, the speed of the server would be slow.  

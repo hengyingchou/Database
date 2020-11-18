@@ -1,0 +1,49 @@
+part a:
+Normalize(R):
+D -> B => {D}^+ = {DB} and {D}^+ != {D} and {D}^+ != {A,B,C,D,E}
+So D->B is "Bad" FD
+so R decompose to:
+R = (A,B,C,D,E) => R1(D,B), R2(D,A,C,E) 
+Normalize(R2):
+CE -> A => {CE}^+ = {CEA} and {CE}^+ != {CE} and {CE}^+ != {D,A,C,E}
+so CE->A is "Bad" FD
+So R2 decompose to: 
+R2 = (D,A,B,C,E) => R3(C,E,A), R4(C,E,D)
+Finally
+R = R1(D,B) + R3(C,E,A) + R4(C,E,D)
+
+Part b:
+Normalize(S):
+A->E => {A}^+ = {AE} and {A}^+ != {A} and {A}^+ != {A,B,C,D,E}
+So, A->E is "Bad" FD
+So S decomposes to:
+S = (A,B,C,D,E) => S1 = (A,E), S2 = (A,B,C,D) 
+Normalize(S2): 
+BC->A => {BC}^+ = {BCA} and {BC}^+ != {BC} and {BC}^+ != {A,B,C,D}
+so BC->A is a "bad" FD
+So S2 decomposes to:
+S2 = (A,B,C,D) => S3(B,C,A), S4(B,C,D)
+
+For the rest dependecy, we cannot find {X}+ that {X}^+ != X and {X}^+ != the set of S1, S3, and S4.
+so we can say S = S1(A,E) + S3(B,C,A) + S4(B,C,D)
+
+Part c:
+Zeros dependency function; 
+
+Part d:
+A -> B
+B -> C
+C -> D
+D -> A
+
+Part e:
+ 
+A -> C 
+B -> C
+C -> B
+A -> D
+D -> A
+
+
+
+
